@@ -1,0 +1,5 @@
+s = "MSAWB~FXZ:J:`tQJ\"N@ bpdd}8g"
+s = [int(c) for c in s]
+for i in range(len(s)):
+    s[i] = s[i] ^ i
+print("".join(s))    
