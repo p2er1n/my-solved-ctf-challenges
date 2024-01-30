@@ -1,0 +1,6 @@
+* process
+it is a windows multi-thread program.
+the first thread get the mutex first and the second thread is waiting now, then the second one get the mutex and the first one is waiting.
+so the half of input is executed on the first thread, the other half on the second one, i guess.
+but i'm in doubt that why the second thread wouldn't be executed first.
+by the way, the decoded output is lack of the last character, in the real match, it doesn't matter, but in this platform(buuctf), it should be 'E'.
