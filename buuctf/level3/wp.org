@@ -1,0 +1,2 @@
+* process
+find that it has a section named .init_array, and a function named LookAtYou being called here. this function changed the base64 table when the program starts. Use the changed table decode the secret to get final flag.
