@@ -1,0 +1,8 @@
+* process
+when the program runs, it will fill up some memory area which will be used in this program.
+so, we should dynamically debug it and dump the filled data.
+this program reads our input and use the data encrypted and then caculates its sha1 to compare with desired value.
+the input should be 48 chars, because the input should only includes printable ascii characters, so there will be n^48 possible inputs.
+if we brute it, it should have been impossible to get the flag, but author tells that the flag is a meaningful string, so maybe it occurs at a early stage.
+more detail is in my exp.py file.
+btw, i spent about 1m30s to get the correct flag in my machine.
