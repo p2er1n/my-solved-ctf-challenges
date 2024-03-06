@@ -1,0 +1,11 @@
+import z3
+a2 = z3.Int('a2')
+a3 = z3.Int('a3')
+a4 = z3.Int('a4')
+s = z3.Solver()
+s.add(a2-a3==-0x7b5dc901)
+s.add(a4+a3==-0x59348fd)
+s.add(a2-a4==0x42d731a8)
+print(s.check())
+m = s.model()
+print(m[a2],m[a3],m[a4])
