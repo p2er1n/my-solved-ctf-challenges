@@ -1,0 +1,4 @@
+this is a simple program with a simple logic.
+it will output the result with ~MessageBoxA~ function, the answer is stored in a local array.
+it decrypt the global data into that array, while it will stop decrypting by checking if an index increases over a const either if the decrypted character is nulll('\0'),
+so obviously, it returns early, just patch the program and get the flag!
