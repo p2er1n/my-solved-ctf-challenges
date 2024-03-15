@@ -1,0 +1,7 @@
+# steps
+
+first we should notice the hint - the result flag is the email sent to, so out task is clear, find everything about sending email
+
+open jadx-gui, we can search sendmail or any thing similiar else, there will be a key function called sendMailByJavaMail, we can then find the MAILUSER comes from C2.MAILUSER,
+dive deeper, we can find MAILUSER is base64 decoded from the result of NativeMethod.m(),
+it is a native library, so extract the libcore.so and launch your ghidra, easily find the cipher.
