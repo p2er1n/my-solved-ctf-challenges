@@ -1,0 +1,10 @@
+* attentions
+echo print a '\n' by default so 'echo '1001' | md5sum -' cannot get the correct output, use echo -n instead.
+c# print md5 in uppercase
+the author got only the front 20 characters.
+
+* steps
+
+so here we list all the possible combinations, it's a combination number, and we try all the possible combinations.
+
+we can also use only sha1 crack services.
