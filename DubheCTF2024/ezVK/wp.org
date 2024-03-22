@@ -1,0 +1,13 @@
+* steps
+
+it's a program linked against vulkan. By searching its used api, we can
+find that it loads a resource called "ezVK", and executes it.
+
+After dumping that resource, we find it's a compiled glsl file which is a SPIRV bytecode file.
+Here we use a tool called spirv-cross, it can decompile spirv bytecode into glsl which is very similar to c.
+
+Now is reversing time! Very simple logic, some points should be noticed.
+First, it's a multi-thread program, so at the same time here are many instances running,
+every encrypts two uint.
+Second, the compared data is not complete, we have to brute the last encrypted 4 bytes.
+
